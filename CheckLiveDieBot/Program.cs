@@ -16,7 +16,7 @@ namespace CheckLiveBot
         private static MessageHandler _messageHandler;
         private static CallbackQueryHandler _callbackHandler;
 
-        private static readonly string BotToken = "7993943846:AAHE9utGc4jqAk0PXz4wzaOaykss1IAGTzE";
+        private static readonly string BotToken = Environment.GetEnvironmentVariable("BOT_TOKEN");
 
         static async Task Main(string[] args)
         {
